@@ -1,0 +1,65 @@
+{
+  "egyetemek": {
+    "ELTE": {
+      "karok": {
+        "IK": {
+          "szakok": {
+            "Programtervező informatikus": {
+              "kotelezo": {
+                "nev": "matematika"
+              },
+              "valaszthato": [
+                {
+                  "nev": "biológia"
+                },
+                {
+                  "nev": "fizika"
+                },
+                {
+                  "nev": "informatika"
+                },
+                {
+                  "nev": "kémia"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "PPKE": {
+      "karok": {
+        "BTK": {
+          "szakok": {
+            "Anglisztika": {
+              "kotelezo": {
+                "nev": "angol nyelv",
+                "tipus": "emelt"
+              },
+              "valaszthato": [
+                {
+                  "nev": "francia"
+                },
+                {
+                  "nev": "német"
+                },
+                {
+                  "nev": "olasz"
+                },
+                {
+                  "nev": "orosz"
+                },
+                {
+                  "nev": "spanyol"
+                },
+                {
+                  "nev": "történelem"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.idea/
+coverage/
+infection/
+vendor/
+html-coverage/
+composer.lock

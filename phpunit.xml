@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        bootstrap="vendor/autoload.php"
+        cacheResult="false"
+        colors="true"
+        executionOrder="random"
+        resolveDependencies="true"
+        stopOnError="true"
+        stopOnFailure="true"
+        testdox="true"
+>
+    <testsuites>
+        <testsuite name="Point Calculator Unit Test Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+        <report>
+            <html outputDirectory="./html-coverage" lowUpperBound="50" highLowerBound="90"/>
+        </report>
+    </coverage>
+    <logging>
+        <junit outputFile="./coverage/junit.xml"/>
+        <teamcity outputFile="./coverage/teamcity.txt"/>
+        <testdoxHtml outputFile="./coverage/testdox.html"/>
+        <testdoxText outputFile="./coverage/testdox.txt"/>
+        <testdoxXml outputFile="./coverage/testdox.xml"/>
+        <text outputFile="./coverage/logfile.txt"/>
+    </logging>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+    </php>
+</phpunit>
